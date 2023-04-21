@@ -1,0 +1,79 @@
+:root {
+    --mainWidth: 1500px;
+
+    --headerColor: white;
+    --footerColor: white;
+    --backgroundColor: black;
+    --buttonColor: black;
+
+    --headerTextColor: black;
+    --buttonTextColor: white;
+    --textColor: white;
+    --footerTextColor: black;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    min-height: 100vh;
+    color: var(--textColor);
+    font-family: "Trebuchet MS", Tahoma, sans-serif;
+    background: var(--backgroundColor);
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+    cursor: pointer;
+}
+
+a {
+    color: var(--textColor);
+    text-decoration: none;
+}
+
+.header {
+    height: 100px;
+}
+
+.header .inside {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .inside .left {
+    height: 100%;
+}
+
+.header .inside .left img {
+    padding: 20px;
+    height: 100%;
+}
+
+.header .inside .right a {
+    padding: 25px;
+    display: inline-block;
+}
