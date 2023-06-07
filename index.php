@@ -69,6 +69,22 @@ include("template_parts/blobs.php");
             </div>
         </div>
     </div>
+
+    <div class="section module_1-1">
+        <div class="container project">
+            <div class="inside">
+                <div class="image">
+                    <img src="images/logo-epv.png" alt="erkend_verhuizen_logo">
+                </div>
+                <div class="text_space">
+                    <h1>Erkend Verhuizen</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="background: red;">
+
+        </div>
+    </div>
 </div>
 </body>
 </html>
