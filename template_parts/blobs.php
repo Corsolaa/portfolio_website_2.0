@@ -1,5 +1,7 @@
 <?php
 /**
+ * Generates blobs in a row for nicer code.
+ *
  * @param $title string
  * @param $blobs array
  * @return void

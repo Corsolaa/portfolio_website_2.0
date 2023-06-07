@@ -23,6 +23,7 @@ include("template_parts/blobs.php");
           rel="stylesheet">
 </head>
 <body>
+
 <?php include("template_parts/header.php") ?>
 
 <div class="content">
@@ -51,6 +52,7 @@ include("template_parts/blobs.php");
         </div>
         <div class="container pic_cover picture_box_1"></div>
     </div>
+
     <div class="section module_4-6">
         <div class="container pic_cover picture_box_2"></div>
         <div class="container info_box info_box_2">
