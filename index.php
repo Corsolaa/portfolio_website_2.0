@@ -33,7 +33,7 @@
             <div class="lower-section">
                 <a href="#">Contact me</a>
                 <div class="icons">
-                    <a class="icon" href="#">
+                    <a class="icon" href="https://github.com/Corsolaa/">
                         <?php include("svg/github_svg.php") ?>
                     </a>
                     <a class="icon" href="https://twitter.com/Corsolaa112">
@@ -50,8 +50,39 @@
     <div class="section module_4-6">
         <div class="container pic_cover picture_box_2"></div>
         <div class="container info_box info_box_2">
-            <h1>The technologies that I mastered.</h1>
-            <div class="program_boxes"></div>
+            <div class="technologies">
+                <h1>The technologies that I mastered.</h1>
+                <p>Languages:</p>
+                <div class="div_sum_up">
+                    <?php
+                    // Output blobs for languages
+                    $languages = ["PHP", "HTML", "CSS", "JS", "Python", "C", "C#", "Java"];
+                    foreach ($languages as $blob) {
+                        echo "<div class='blob'>$blob</div>";
+                    }
+                    ?>
+                </div>
+                <p>Database structures:</p>
+                <div class="div_sum_up">
+                    <?php
+                    // Output blobs for Database structures
+                    $databases = ["MySQL", "MongoDB"];
+                    foreach ($databases as $blob) {
+                        echo "<div class='blob'>$blob</div>";
+                    }
+                    ?>
+                </div>
+                <p>Programs that I use:</p>
+                <div class="div_sum_up">
+                    <?php
+                    // Output blobs for Programs structures
+                    $programs = ["Wordpress", "PHPStorm", "VSCode", "Termius", "Sublime", "Postman", "Git", "FileZilla"];
+                    foreach ($programs as $blob) {
+                        echo "<div class='blob'>$blob</div>";
+                    }
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
