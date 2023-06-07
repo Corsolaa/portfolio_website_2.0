@@ -186,29 +186,46 @@ a {
     background: linear-gradient(340deg, rgba(228, 228, 228, 1) 42%, rgba(87, 208, 209, 1) 80%, rgb(13, 174, 175) 100%);
 
     .technologies {
+        height: 100%;
+
         > h1 {
             margin-bottom: 20px;
         }
-        .div_sum_up {
+
+        .titles {
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 25px;
 
-            width: 90%;
+            height: 90%;
 
-            margin-top: 5px;
-            margin-bottom: 15px;
-
-            .blob {
+            .title_section {
                 display: flex;
+                flex-direction: column;
+            }
 
-                box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+            .div_sum_up {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
 
-                border-radius: 24px;
+                width: 90%;
 
-                padding: 5px 10px;
+                margin-top: 5px;
+                margin-bottom: 15px;
 
-                background: white;
+                .blob {
+                    display: flex;
+
+                    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+
+                    border-radius: 24px;
+
+                    padding: 5px 10px;
+
+                    background: white;
+                }
             }
         }
     }

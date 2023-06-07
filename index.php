@@ -1,3 +1,7 @@
+<?php
+include("template_parts/blobs.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,35 +55,13 @@
         <div class="container pic_cover picture_box_2"></div>
         <div class="container info_box info_box_2">
             <div class="technologies">
-                <h1>The technologies that I mastered.</h1>
-                <p>Languages:</p>
-                <div class="div_sum_up">
+                <h1>The technologies that I master.</h1>
+                <div class="titles">
                     <?php
-                    // Output blobs for languages
-                    $languages = ["PHP", "HTML", "CSS", "JS", "Python", "C", "C#", "Java"];
-                    foreach ($languages as $blob) {
-                        echo "<div class='blob'>$blob</div>";
-                    }
-                    ?>
-                </div>
-                <p>Database structures:</p>
-                <div class="div_sum_up">
-                    <?php
-                    // Output blobs for Database structures
-                    $databases = ["MySQL", "MongoDB"];
-                    foreach ($databases as $blob) {
-                        echo "<div class='blob'>$blob</div>";
-                    }
-                    ?>
-                </div>
-                <p>Programs that I use:</p>
-                <div class="div_sum_up">
-                    <?php
-                    // Output blobs for Programs structures
-                    $programs = ["Wordpress", "PHPStorm", "VSCode", "Termius", "Sublime", "Postman", "Git", "FileZilla"];
-                    foreach ($programs as $blob) {
-                        echo "<div class='blob'>$blob</div>";
-                    }
+                    generate_blob_field("Languages:", ["PHP", "HTML", "CSS", "JS", "Python", "C", "C#", "Java"]);
+                    generate_blob_field("Database structures:", ["MySQL", "MongoDB"]);
+                    generate_blob_field("Programs that I use:", ["Wordpress", "PHPStorm", "VSCode", "Termius",
+                        "Sublime", "Postman", "Git", "FileZilla"]);
                     ?>
                 </div>
             </div>
