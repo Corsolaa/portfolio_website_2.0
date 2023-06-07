@@ -1,3 +1,7 @@
+<?php
+include("template_parts/blobs.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +37,7 @@
             <div class="lower-section">
                 <a href="#">Contact me</a>
                 <div class="icons">
-                    <a class="icon" href="#">
+                    <a class="icon" href="https://github.com/Corsolaa/">
                         <?php include("svg/github_svg.php") ?>
                     </a>
                     <a class="icon" href="https://twitter.com/Corsolaa112">
@@ -50,8 +54,17 @@
     <div class="section module_4-6">
         <div class="container pic_cover picture_box_2"></div>
         <div class="container info_box info_box_2">
-            <h1>The technologies that I mastered.</h1>
-            <div class="program_boxes"></div>
+            <div class="technologies">
+                <h1>The technologies that I master.</h1>
+                <div class="titles">
+                    <?php
+                    generate_blob_field("Languages:", ["PHP", "HTML", "CSS", "JS", "Python", "C", "C#", "Java"]);
+                    generate_blob_field("Database structures:", ["MySQL", "MongoDB"]);
+                    generate_blob_field("Programs that I use:", ["Wordpress", "PHPStorm", "VSCode", "Termius",
+                        "Sublime", "Postman", "Git", "FileZilla"]);
+                    ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
