@@ -4,29 +4,15 @@ include("template_parts/blobs.php");
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="description of the website.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow"/>
-    <meta name="author" content="Bruno B">
-
-    <title>Bruno B</title>
-
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/gold_duck.ico">
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-          rel="stylesheet">
-</head>
+<?php
+include("template_parts/head.php");
+?>
 <body>
+
 <?php include("template_parts/header.php") ?>
 
 <div class="content">
-    <div class="section module_6-4">
+    <div class="section smoll_sec module_6-4">
         <div class="container info_box info_box_1">
             <div class="top-section">
                 <h1>Hello, I'm Bruno. <br>
@@ -51,7 +37,8 @@ include("template_parts/blobs.php");
         </div>
         <div class="container pic_cover picture_box_1"></div>
     </div>
-    <div class="section module_4-6">
+
+    <div class="section smoll_sec module_4-6">
         <div class="container pic_cover picture_box_2"></div>
         <div class="container info_box info_box_2">
             <div class="technologies">
@@ -63,6 +50,31 @@ include("template_parts/blobs.php");
                     generate_blob_field("Programs that I use:", ["Wordpress", "PHPStorm", "VSCode", "Termius",
                         "Sublime", "Postman", "Git", "FileZilla"]);
                     ?>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section module_1-1">
+        <div class="container project">
+            <div class="inside">
+                <div class="text_space">
+                    <h2>Erkend Verhuizen</h2>
+                    <p>Dashboard to find recognised movers</p>
+                </div>
+                <div class="image">
+                    <img src="images/erkend_verhuizen.png" alt="erkend_verhuizen_logo">
+                </div>
+            </div>
+        </div>
+        <div class="container project" style="background: gray;">
+            <div class="inside">
+                <div class="text_space">
+                    <h2>VillaArena</h2>
+                    <p>A quiz program that gives your personal</p>
+                </div>
+                <div class="image">
+                    <img src="images/villaarena_woonquiz.png" alt="villa-arena_woon-quiz">
                 </div>
             </div>
         </div>
