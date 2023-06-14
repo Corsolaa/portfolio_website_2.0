@@ -60,7 +60,7 @@ include("template_parts/head.php");
             <div class="inside">
                 <div class="text_space">
                     <h2>Erkend Verhuizen</h2>
-                    <p>Dashboard to find recognised movers</p>
+                    <p>Dashboard to find recognised movers.</p>
                 </div>
                 <div class="image">
                     <img src="images/erkend_verhuizen.png" alt="erkend_verhuizen_logo">
@@ -71,12 +71,18 @@ include("template_parts/head.php");
             <div class="inside">
                 <div class="text_space">
                     <h2>VillaArena</h2>
-                    <p>A quiz program that gives your personal</p>
+                    <p>A quiz program that gives you a personal style.</p>
                 </div>
                 <div class="image">
                     <img src="images/villaarena_woonquiz.png" alt="villa-arena_woon-quiz">
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="section module_1">
+        <div class="container contact">
+            <h1>Want to roll into a project with me?</h1>
         </div>
     </div>
 </div>
