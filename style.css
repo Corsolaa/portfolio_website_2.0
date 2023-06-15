@@ -11,6 +11,12 @@
     --footerTextColor: black;
 }
 
+@media screen and (max-width: 1100px) {
+    :root {
+        --mainWidth: 100%;
+    }
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -300,6 +306,7 @@ a {
     gap: 25px;
 
     height: 500px;
+    width: 100%;
 
     margin-bottom: 25px;
 }
