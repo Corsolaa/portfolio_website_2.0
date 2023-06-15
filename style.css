@@ -137,47 +137,6 @@ a {
             padding-top: 35px;
         }
     }
-
-    .lower-section {
-        display: flex;
-        justify-content: space-between;
-
-        > a:first-of-type {
-            background: black;
-            color: white !important;
-
-            padding: 10px 25px;
-            border-radius: 24px;
-        }
-
-        .icons {
-            display: flex;
-            gap: 25px;
-
-            .icon {
-                width: 40px;
-                height: 40px;
-                background: white;
-                border-radius: 24px;
-
-                > svg path {
-                    transition: fill 0.4s, background 0.4s;
-                }
-
-                &:nth-child(1):hover svg {
-                    fill: #8a31a9;
-                }
-
-                &:nth-child(2):hover svg {
-                    fill: #1a8cd8;
-                }
-
-                &:nth-child(3):hover svg {
-                    fill: #004182;
-                }
-            }
-        }
-    }
 }
 
 .info_box_2 {
@@ -224,6 +183,47 @@ a {
 
                     background: white;
                 }
+            }
+        }
+    }
+}
+
+.contact_small {
+    display: flex;
+    justify-content: space-between;
+
+    > a:first-of-type {
+        background: black;
+        color: white !important;
+
+        padding: 10px 25px;
+        border-radius: 24px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 25px;
+
+        .icon {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 24px;
+
+            > svg path {
+                transition: fill 0.4s, background 0.4s;
+            }
+
+            &:nth-child(1):hover svg {
+                fill: #8a31a9;
+            }
+
+            &:nth-child(2):hover svg {
+                fill: #1a8cd8;
+            }
+
+            &:nth-child(3):hover svg {
+                fill: #004182;
             }
         }
     }
@@ -277,7 +277,22 @@ a {
     background: rgb(228,228,228);
     background: linear-gradient(151deg, rgba(228,228,228,1) 66%, rgba(153,162,255,1) 87%, rgba(53,152,255,1) 100%);
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 35px;
+
+    .top {
+        > h1 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+        }
+
+        > p:nth-child(3) {
+            margin-top: 15px;
+        }
+    }
 }
 
 .section {
@@ -291,6 +306,10 @@ a {
 
 .smoll_sec {
     height: 400px;
+}
+
+.smoller_sec {
+    height: 300px;
 }
 
 .module_6-4 {

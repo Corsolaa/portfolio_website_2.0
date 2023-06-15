@@ -20,20 +20,7 @@ include("template_parts/head.php");
                 <p>I really like to make peoples dreams into websites.</p>
                 <p>Also to create fun applications, websites and easy to use userinterfaces.</p>
             </div>
-            <div class="lower-section">
-                <a href="#">Contact me</a>
-                <div class="icons">
-                    <a class="icon" href="https://github.com/Corsolaa/">
-                        <?php include("svg/github_svg.php") ?>
-                    </a>
-                    <a class="icon" href="https://twitter.com/Corsolaa112">
-                        <?php include("svg/twitter_svg.php") ?>
-                    </a>
-                    <a class="icon" href="https://www.linkedin.com/in/bruno-bouwman-6a03a4238/">
-                        <?php include("svg/linked_in_svg.php") ?>
-                    </a>
-                </div>
-            </div>
+            <?php include("template_parts/contact_small.php") ?>
         </div>
         <div class="container pic_cover picture_box_1"></div>
     </div>
@@ -55,7 +42,7 @@ include("template_parts/head.php");
         </div>
     </div>
 
-    <div class="section module_1-1">
+    <div class="section module_1-1" id="projects">
         <div class="container project">
             <div class="inside">
                 <div class="text_space">
@@ -80,9 +67,14 @@ include("template_parts/head.php");
         </div>
     </div>
 
-    <div class="section module_1">
+    <div class="section module_1 smoller_sec" id="contact">
         <div class="container contact">
-            <h1>Want to roll into a project with me?</h1>
+            <div class="top">
+                <h1>Want to roll into a project together?</h1>
+                <p>Feel free to connect for collaborations or a friendly greeting.</p>
+                <p>bruno@oversticht.eu</p>
+            </div>
+            <?php include("template_parts/contact_small.php") ?>
         </div>
     </div>
 </div>
