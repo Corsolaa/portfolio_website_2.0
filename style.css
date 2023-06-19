@@ -11,12 +11,6 @@
     --footerTextColor: black;
 }
 
-@media screen and (max-width: 1100px) {
-    :root {
-        --mainWidth: 100%;
-    }
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -108,6 +102,8 @@ a {
     margin-right: auto;
     margin-left: auto;
     max-width: var(--mainWidth);
+
+    padding: 25px 25px 0;
 
     .container {
         border-radius: 25px;
@@ -280,8 +276,8 @@ a {
 }
 
 .contact {
-    background: rgb(228,228,228);
-    background: linear-gradient(151deg, rgba(228,228,228,1) 66%, rgba(153,162,255,1) 87%, rgba(53,152,255,1) 100%);
+    background: rgb(228, 228, 228);
+    background: linear-gradient(151deg, rgba(228, 228, 228, 1) 66%, rgba(153, 162, 255, 1) 87%, rgba(53, 152, 255, 1) 100%);
 
     display: flex;
     flex-direction: column;
@@ -359,5 +355,60 @@ a {
     .container:nth-child(2) {
         height: 100%;
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --mainWidth: 100%;
+    }
+
+    .info_box {
+        padding: 25px;
+    }
+
+    .row_2 {
+        height: fit-content;
+        gap: 0;
+        flex-wrap: wrap;
+
+        .container {
+            width: 100% !important;
+        }
+    }
+
+    .div_sum_up {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    h1 {
+        font-size: 1.6rem !important;
+    }
+
+    .info_box {
+        width: 100% !important;
+        padding: 15px;
+    }
+
+    .row_1 {
+        height: fit-content;
+
+        flex-direction: row;
+        gap: 0;
+        flex-wrap: wrap;
+
+        .contact_small {
+            padding-top: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact_small {
+        .icons {
+            gap: 5px;
+        }
     }
 }

@@ -12,20 +12,24 @@ include("template_parts/head.php");
 <?php include("template_parts/header.php") ?>
 
 <div class="content">
-    <div class="section smoll_sec module_6-4">
+    <div class="section smoll_sec row_1 module_6-4">
         <div class="container info_box info_box_1">
             <div class="top-section">
-                <h1>Hello, I'm Bruno. <br>
-                    a software developer with 5 years of experience.</h1>
-                <p>I really like to make peoples dreams into websites.</p>
-                <p>Also to create fun applications, websites and easy to use userinterfaces.</p>
+                <div class="text">
+                    <h1>Hello, I'm Bruno. <br>
+                        a software developer with 5 years of experience.</h1>
+                    <p>I really like to make peoples dreams into websites.</p>
+                    <p>Also to create fun applications, websites and easy to use userinterfaces.</p>
+                </div>
+                <div class="prof_image_small"></div>
             </div>
+
             <?php include("template_parts/contact_small.php") ?>
         </div>
         <div class="container pic_cover picture_box_1"></div>
     </div>
 
-    <div class="section smoll_sec module_4-6">
+    <div class="section smoll_sec row_2 module_4-6">
         <div class="container pic_cover picture_box_2"></div>
         <div class="container info_box info_box_2">
             <div class="technologies">
@@ -68,7 +72,7 @@ include("template_parts/head.php");
     </div>
 
     <div class="section module_1 smoller_sec" id="contact">
-        <div class="container contact">
+        <div class="container contact info_box">
             <div class="top">
                 <h1>Want to roll into a project together?</h1>
                 <p>Feel free to connect for collaborations or a friendly greeting.</p>
