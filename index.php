@@ -12,7 +12,9 @@ include("template_parts/head.php");
 <?php include("template_parts/header.php") ?>
 
 <div class="content">
+    <div class="container pic_cover picture_box_big_boi " style="display: none;" ></div>
     <div class="section smoll_sec row_1 module_6-4">
+
         <div class="container info_box info_box_1">
             <div class="top-section">
                 <div class="text">
@@ -21,7 +23,6 @@ include("template_parts/head.php");
                     <p>I really like to make peoples dreams into websites.</p>
                     <p>Also to create fun applications, websites and easy to use userinterfaces.</p>
                 </div>
-                <div class="prof_image_small"></div>
             </div>
 
             <?php include("template_parts/contact_small.php") ?>

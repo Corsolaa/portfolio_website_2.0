@@ -56,6 +56,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: var(--mainWidth);
 
@@ -114,6 +115,10 @@ a {
     background-size: cover;
 }
 
+.picture_box_big_boi {
+    background-image: url("images/bruno_foto_1.jpg");
+}
+
 .picture_box_1 {
     background-image: url("images/bruno_foto_1.jpg");
 }
@@ -135,7 +140,7 @@ a {
     background: linear-gradient(144deg, rgba(228, 228, 228, 1) 42%, rgba(87, 208, 209, 1) 80%, rgba(12, 146, 147, 1) 100%);
 
     .top-section {
-        > p:first-of-type {
+        > .text p:first-of-type {
             padding-top: 35px;
         }
     }
@@ -383,25 +388,61 @@ a {
 }
 
 @media screen and (max-width: 750px) {
+    .info_box_1 .top-section .text p:first-of-type {
+        padding-top: 10px;
+    }
+
+    .content {
+        padding: 10px 10px 0 !important;
+    }
+
     h1 {
         font-size: 1.6rem !important;
     }
 
     .info_box {
-        width: 100% !important;
         padding: 15px;
+    }
+
+    .picture_box_1 {
+        height: auto !important;
+        width: calc(40% - 10px) !important;
     }
 
     .row_1 {
         height: fit-content;
 
         flex-direction: row;
-        gap: 0;
+        gap: 10px;
         flex-wrap: wrap;
 
         .contact_small {
             padding-top: 25px;
+
+            .icons {
+                gap: 5px;
+            }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info_box_1{
+        width: 100% !important;
+    }
+
+    .picture_box_1 {
+        display: none !important;
+    }
+
+    .picture_box_big_boi {
+        display: block !important;
+        width: 420px;
+        height: 350px;
+
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
     }
 }
 
@@ -410,5 +451,11 @@ a {
         .icons {
             gap: 5px;
         }
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .picture_box_big_boi {
+        width: 100%;
     }
 }
