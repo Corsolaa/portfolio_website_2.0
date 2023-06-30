@@ -119,6 +119,10 @@ a {
     background-image: url("images/bruno_foto_1.jpg");
 }
 
+.picture_box_big_boi_second{
+    background-image: url("images/bruno_foto_2.jpg");
+}
+
 .picture_box_1 {
     background-image: url("images/bruno_foto_1.jpg");
 }
@@ -374,11 +378,18 @@ a {
 
     .row_2 {
         height: fit-content;
-        gap: 0;
-        flex-wrap: wrap;
 
-        .container {
-            width: 100% !important;
+        .info_box {
+            width: 72% !important;
+
+            .technologies .titles {
+                gap: 5px;
+            }
+        }
+
+        .picture_box_2 {
+            height: auto !important;
+            background-position: right;
         }
     }
 
@@ -387,17 +398,29 @@ a {
     }
 }
 
+@media screen and (max-width: 890px) {
+    h1 {
+        font-size: 1.6rem !important;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .info_box_1 .top-section .text p:first-of-type {
         padding-top: 10px;
     }
 
-    .content {
-        padding: 10px 10px 0 !important;
+    .picture_box_big_boi_second {
+        display: block !important;
+        width: 420px;
+        height: 350px;
+
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
     }
 
-    h1 {
-        font-size: 1.6rem !important;
+    .content {
+        padding: 10px 10px 0 !important;
     }
 
     .info_box {
@@ -407,6 +430,10 @@ a {
     .picture_box_1 {
         height: auto !important;
         width: calc(40% - 10px) !important;
+    }
+
+    .section {
+        margin-bottom: 10px;
     }
 
     .row_1 {
@@ -422,6 +449,19 @@ a {
             .icons {
                 gap: 5px;
             }
+        }
+    }
+    .row_2 {
+        height: fit-content;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .info_box {
+            width: 100% !important;
+        }
+        .pic_cover {
+            display: none;
         }
     }
 }
@@ -456,6 +496,10 @@ a {
 
 @media screen and (max-width: 458px) {
     .picture_box_big_boi {
+        width: 100%;
+    }
+
+    .picture_box_big_boi_second {
         width: 100%;
     }
 }

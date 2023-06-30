@@ -14,7 +14,6 @@ include("template_parts/head.php");
 <div class="content">
     <div class="container pic_cover picture_box_big_boi " style="display: none;" ></div>
     <div class="section smoll_sec row_1 module_6-4">
-
         <div class="container info_box info_box_1">
             <div class="top-section">
                 <div class="text">
@@ -46,6 +45,8 @@ include("template_parts/head.php");
             </div>
         </div>
     </div>
+
+    <div class="container pic_cover picture_box_big_boi_second second" style="display: none;" ></div>
 
     <div class="section module_1-1" id="projects">
         <div class="container project">
