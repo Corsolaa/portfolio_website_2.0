@@ -1,13 +1,8 @@
 <?php
+$title = "Bruno B";
+include("template_parts/head.php");
 include("template_parts/blobs.php");
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<?php
-include("template_parts/head.php");
-?>
-<body>
 
 <?php include("template_parts/header.php") ?>
 

@@ -1,3 +1,12 @@
+<?php
+// Check if there is a title set.
+if (!isset($title)) {
+    $title = "Bruno B";
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="description of the website.">
@@ -5,7 +14,7 @@
     <meta name="robots" content="noindex, nofollow"/>
     <meta name="author" content="Bruno B">
 
-    <title>Bruno B</title>
+    <title><?php echo $title ?></title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="images/gold_duck.ico">
@@ -16,3 +25,4 @@
     <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400;1,700&display=swap"
           rel="stylesheet">
 </head>
+<body>
