@@ -2,9 +2,8 @@
 $title = "Bruno B";
 include("template_parts/head.php");
 include("template_parts/blobs.php");
+include("template_parts/header.php");
 ?>
-
-<?php include("template_parts/header.php") ?>
 
 <div class="content">
     <div class="container pic_cover picture_box_big_boi " style="display: none;" ></div>
