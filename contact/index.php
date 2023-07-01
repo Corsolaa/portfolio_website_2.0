@@ -6,5 +6,5 @@ include("../template_parts/header.php");
 ?>
 
 <div class="content">
-    <?php ?>
+
 </div>

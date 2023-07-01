@@ -50,7 +50,7 @@ include("template_parts/header.php");
                     <p>Dashboard to find recognised movers.</p>
                 </div>
                 <div class="image">
-                    <img src="images/erkend_verhuizen.png" alt="erkend_verhuizen_logo">
+                    <img src="/images/erkend_verhuizen.png" alt="erkend_verhuizen_logo">
                 </div>
             </div>
         </div>
@@ -61,7 +61,7 @@ include("template_parts/header.php");
                     <p>A quiz program that gives you a personal style.</p>
                 </div>
                 <div class="image">
-                    <img src="images/villaarena_woonquiz.png" alt="villa-arena_woon-quiz">
+                    <img src="/images/villaarena_woonquiz.png" alt="villa-arena_woon-quiz">
                 </div>
             </div>
         </div>

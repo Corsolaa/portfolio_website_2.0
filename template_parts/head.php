@@ -16,8 +16,8 @@ if (!isset($title)) {
 
     <title><?php echo $title ?></title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/gold_duck.ico">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" href="/images/gold_duck.ico">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
