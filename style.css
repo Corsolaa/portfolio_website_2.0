@@ -56,6 +56,7 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     width: var(--mainWidth);
 
@@ -99,9 +100,14 @@ a {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+
     margin-right: auto;
     margin-left: auto;
     max-width: var(--mainWidth);
+
+    padding: 25px 25px 0;
 
     .container {
         border-radius: 25px;
@@ -110,6 +116,14 @@ a {
 
 .pic_cover {
     background-size: cover;
+}
+
+.picture_box_big_boi {
+    background-image: url("images/bruno_foto_1.jpg");
+}
+
+.picture_box_big_boi_second{
+    background-image: url("images/bruno_foto_2.jpg");
 }
 
 .picture_box_1 {
@@ -133,7 +147,7 @@ a {
     background: linear-gradient(144deg, rgba(228, 228, 228, 1) 42%, rgba(87, 208, 209, 1) 80%, rgba(12, 146, 147, 1) 100%);
 
     .top-section {
-        > p:first-of-type {
+        > .text p:first-of-type {
             padding-top: 35px;
         }
     }
@@ -250,9 +264,9 @@ a {
 
         .text_space {
             width: 100%;
-            height: 20%;
+            height: 90px;
 
-            padding: 25px;
+            padding: 25px 25px 0 25px;
         }
 
         .image {
@@ -260,11 +274,13 @@ a {
             justify-content: center;
             align-items: center;
 
+            padding: 20px;
+
             width: 100%;
             height: 80%;
 
             > img {
-                width: auto;
+                width: 100%;
                 height: 100%;
 
                 border-radius: 24px 0 24px 0;
@@ -274,8 +290,8 @@ a {
 }
 
 .contact {
-    background: rgb(228,228,228);
-    background: linear-gradient(151deg, rgba(228,228,228,1) 66%, rgba(153,162,255,1) 87%, rgba(53,152,255,1) 100%);
+    background: rgb(228, 228, 228);
+    background: linear-gradient(151deg, rgba(228, 228, 228, 1) 66%, rgba(153, 162, 255, 1) 87%, rgba(53, 152, 255, 1) 100%);
 
     display: flex;
     flex-direction: column;
@@ -299,7 +315,7 @@ a {
     display: flex;
     gap: 25px;
 
-    height: 500px;
+    width: 100%;
 
     margin-bottom: 25px;
 }
@@ -352,5 +368,152 @@ a {
     .container:nth-child(2) {
         height: 100%;
         width: 50%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --mainWidth: 100%;
+    }
+
+    .info_box {
+        padding: 25px;
+    }
+
+    .row_2 {
+        height: fit-content;
+
+        .info_box {
+            width: 72% !important;
+
+            .technologies .titles {
+                gap: 5px;
+            }
+        }
+
+        .picture_box_2 {
+            height: auto !important;
+            background-position: right;
+        }
+    }
+
+    .div_sum_up {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    h1 {
+        font-size: 1.6rem !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #projects {
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 10px;
+    }
+    .project {
+        width: 100% !important;
+    }
+
+    .info_box_1 .top-section .text p:first-of-type {
+        padding-top: 10px;
+    }
+
+    .picture_box_big_boi_second {
+        display: block !important;
+        width: 420px;
+        height: 350px;
+
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 10px 10px 0 !important;
+    }
+
+    .info_box {
+        padding: 15px;
+    }
+
+    .picture_box_1 {
+        height: auto !important;
+        width: calc(40% - 10px) !important;
+    }
+
+    .section {
+        margin-bottom: 10px;
+    }
+
+    .row_1 {
+        height: fit-content;
+
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap;
+
+        .contact_small {
+            padding-top: 25px;
+
+            .icons {
+                gap: 5px;
+            }
+        }
+    }
+    .row_2 {
+        height: fit-content;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .info_box {
+            width: 100% !important;
+        }
+        .pic_cover {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .info_box_1{
+        width: 100% !important;
+    }
+
+    .picture_box_1 {
+        display: none !important;
+    }
+
+    .picture_box_big_boi {
+        display: block !important;
+        width: 420px;
+        height: 350px;
+
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .contact_small {
+        .icons {
+            gap: 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .picture_box_big_boi {
+        width: 100%;
+    }
+
+    .picture_box_big_boi_second {
+        width: 100%;
     }
 }
