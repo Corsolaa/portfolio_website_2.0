@@ -1,4 +1,4 @@
-// Theme: Home Page
+
 
 .pic_cover {
     background-size: cover;
@@ -197,6 +197,15 @@
     }
 }
 
+.section {
+    display: flex;
+    gap: 25px;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
 .smoll_sec {
     height: 400px;
 }
@@ -249,6 +258,10 @@
 }
 
 @media screen and (max-width: 1100px) {
+    :root {
+        --mainWidth: 100%;
+    }
+
     .info_box {
         padding: 25px;
     }
@@ -306,6 +319,10 @@
         margin-bottom: 10px;
     }
 
+    .content {
+        padding: 10px 10px 0 !important;
+    }
+
     .info_box {
         padding: 15px;
     }
@@ -313,6 +330,10 @@
     .picture_box_1 {
         height: auto !important;
         width: calc(40% - 10px) !important;
+    }
+
+    .section {
+        margin-bottom: 10px;
     }
 
     .row_1 {

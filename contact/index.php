@@ -1,6 +1,6 @@
 <?php
 $title = "Bruno B - Contact";
-$stylesheet = ["basic", "contact"];
+$stylesheet = ["contact"];
 include("../template_parts/head.php");
 
 ?>
