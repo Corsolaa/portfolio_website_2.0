@@ -37,3 +37,27 @@ span {
 input {
     padding: 5px;
 }
+
+.submit_but {
+    position: relative;
+    transition: top ease 0.2s, box-shadow ease 0.2s;
+    top: 0;
+
+    background: #3598ff;
+    color: white;
+    font-size: 1.5rem;
+
+    border: 0;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+
+    margin-top: 25px;
+    padding: 10px 20px;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.submit_but:hover {
+    box-shadow: none;
+    top: 3px;
+}

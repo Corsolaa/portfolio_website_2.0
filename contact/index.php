@@ -18,6 +18,6 @@ include("../template_parts/head.php");
             <span>Message:</span>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </label>
-        <input type="submit" value="SUBMIT">
+        <input class="submit_but" type="submit" value="SUBMIT">
     </form>
 </div>
