@@ -3,6 +3,9 @@
 if (!isset($title)) {
     $title = "Bruno B";
 }
+if (!isset($stylesheet)) {
+    $stylesheet = "basic";
+}
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +19,14 @@ if (!isset($title)) {
 
     <title><?php echo $title ?></title>
 
-    <link rel="stylesheet" href="/style.css">
+    <?php
+    foreach ($stylesheet as $path) {
+        ?>
+        <link rel="stylesheet" href="/stylesheets/<?php echo $path?>.css">
+        <?php
+    }
+    ?>
+    <link rel="stylesheet" href="/stylesheets/home.css">
     <link rel="icon" href="/images/gold_duck.ico">
 
     <!-- Google Fonts -->
@@ -26,3 +36,5 @@ if (!isset($title)) {
           rel="stylesheet">
 </head>
 <body>
+
+<?php include("../template_parts/header.php");

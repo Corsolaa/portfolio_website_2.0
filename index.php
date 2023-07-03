@@ -1,5 +1,6 @@
 <?php
 $title = "Bruno B";
+$stylesheet = ["basic", "home"];
 include("template_parts/head.php");
 include("template_parts/blobs.php");
 include("template_parts/header.php");
