@@ -101,7 +101,7 @@ a {
     margin-left: auto;
     max-width: var(--mainWidth);
 
-    padding: 25px 25px 0;
+    padding: 0 25px 25px 25px;
 
     .container {
         border-radius: 25px;

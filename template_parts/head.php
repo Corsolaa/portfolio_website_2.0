@@ -4,7 +4,7 @@ if (!isset($title)) {
     $title = "Bruno B";
 }
 if (!isset($stylesheet)) {
-    $stylesheet = "basic";
+    $stylesheet = [];
 }
 ?>
 
@@ -26,7 +26,7 @@ if (!isset($stylesheet)) {
         <?php
     }
     ?>
-    <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/basic.css">
     <link rel="icon" href="/images/gold_duck.ico">
 
     <!-- Google Fonts -->
@@ -36,5 +36,5 @@ if (!isset($stylesheet)) {
           rel="stylesheet">
 </head>
 <body>
-
-<?php include("../template_parts/header.php");
+<?php
+include(__DIR__ . "/header.php");?>
