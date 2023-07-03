@@ -1,3 +1,5 @@
+// Theme: Basic
+
 :root {
     --mainWidth: 1100px;
     --headerColor: white;
@@ -105,5 +107,30 @@ a {
 
     .container {
         border-radius: 25px;
+    }
+}
+
+.section {
+    display: flex;
+    gap: 25px;
+
+    width: 100%;
+
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1100px) {
+    :root {
+        --mainWidth: 100%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .content {
+        padding: 10px 10px 0 !important;
+    }
+
+    .section {
+        margin-bottom: 10px;
     }
 }
