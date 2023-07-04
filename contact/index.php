@@ -8,7 +8,15 @@ include "../functions/error_handling.php";
 <div class="content">
     <?php
     if (isset($_GET["success"])) {
-        echo "bonjour";
+        ?>
+        <div class="form_success">
+            <div>
+                <h1>You'r message has been send!</h1>
+                <p>I will contact you as soon as possible.</p>
+            </div>
+            <iframe src="../images/giphy.gif" width="377" height="480" frameBorder="0" allowFullScreen></iframe>
+        </div>
+        <?php
     } else {
         ?>
         <form action="../user_input/set_contact.php" method="post">
