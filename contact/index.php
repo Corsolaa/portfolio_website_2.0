@@ -20,6 +20,11 @@ include "../functions/error_handling.php";
     } else {
         ?>
         <form action="../user_input/set_contact.php" method="post">
+            <h1>Want to roll into a project together?</h1>
+            <p style="margin-top: 10px">Feel free to connect for collaborations or a friendly greeting.</p>
+            <br>
+            <a href="mailto:bruno@oversticht.eu" style="text-decoration: underline">bruno@oversticht.eu</a>
+            <br>
             <label for="email">
                 <span>E-mail:</span>
                 <input type="email" name="email" id="email">

@@ -89,6 +89,7 @@ a {
 
         .active {
             color: black;
+            font-weight: bold;
         }
     }
 }

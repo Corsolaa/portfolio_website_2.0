@@ -71,8 +71,8 @@ include("template_parts/blobs.php");
         <div class="container contact info_box">
             <div class="top">
                 <h1>Want to roll into a project together?</h1>
-                <p>Feel free to connect for collaborations or a friendly greeting.</p>
-                <p>bruno@oversticht.eu</p>
+                <p style="margin-bottom: 20px">Feel free to connect for collaborations or a friendly greeting.</p>
+                <a href="mailto:bruno@oversticht.eu" style="text-decoration: underline">bruno@oversticht.eu</a>
             </div>
             <?php include("template_parts/contact_small.php") ?>
         </div>
