@@ -1,9 +1,11 @@
 .content {
     height: calc(100vh - 65px);
     justify-content: center;
+    align-items: center;
 }
 
 form {
+    width: 500px;
     display: flex;
     flex-direction: column;
 
@@ -13,6 +15,7 @@ form {
     box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 
     > label {
+        margin-top: 5px;
         display: flex;
         flex-direction: column;
     }
@@ -33,20 +36,20 @@ textarea {
     resize: none;
 }
 
-label {
-    width: 50%;
-}
-
 .message_sect {
     width: 100%;
+    > span {
+        margin-bottom: 2px;
+    }
 }
 
 span {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 input {
-    padding: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
 }
 
 .submit_but {

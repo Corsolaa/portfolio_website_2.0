@@ -39,7 +39,7 @@ include "../functions/error_handling.php";
                 <?php
             }
             ?>
-            <input class="submit_but" type="submit" value="SUBMIT">
+            <input class="submit_but" type="submit" value="Submit">
         </form>
         <?php
     }
