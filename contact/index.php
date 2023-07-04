@@ -11,10 +11,10 @@ include "../functions/error_handling.php";
         ?>
         <div class="form_success">
             <div>
-                <h1>You'r message has been send!</h1>
-                <p>I will contact you as soon as possible.</p>
+                <h1 style="text-align: center">You'r message has been send!</h1>
+                <p style="text-align: center">I will contact you as soon as possible.</p>
             </div>
-            <iframe src="../images/giphy.gif" width="377" height="480" frameBorder="0" allowFullScreen></iframe>
+            <img src="../images/giphy.gif" alt="cat_gif">
         </div>
         <?php
     } else {

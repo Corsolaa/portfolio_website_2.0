@@ -79,4 +79,12 @@ input {
 .form_success {
     display: flex;
     align-items: center;
+    flex-direction: column;
+
+    > img {
+        width: 150px;
+        height: 100%;
+
+        margin-top: 15px;
+    }
 }
