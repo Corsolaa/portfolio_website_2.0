@@ -1,18 +1,7 @@
 <?php
 include "../functions/mysql_con.php";
-include "../functions/clean_data.php"
-?>
+include "../functions/clean_data.php";
 
-<pre><?php
-    if ($con != null) {
-        echo "MYSQL connected. <br>";
-    }
-    echo "POST DATA: <br>";
-    var_dump($_POST);
-    ?>
-</pre>
-
-<?php
 if (empty($_POST["email"]) || empty($_POST["name"]) || empty($_POST["message"])) {
     header("Location: /contact?error=not_filled");
     die();
@@ -26,5 +15,10 @@ $email = cleanData($_POST["email"]);
 $name = cleanData($_POST["name"]);
 $message = cleanData($_POST["message"]);
 
-//INSERT INTO `email_requests` (`id`, `email`, `name`, `message`, `requested_on`)
-// VALUES (NULL, 'bruno@oversticht.eu', 'Naam', 'This is a text message.', current_timestamp());
+$sql_query = "INSERT INTO `email_requests` (`id`, `email`, `name`, `message`, `requested_on`)
+                VALUES (NULL, '$email', '$name', '$message', current_timestamp());";
+
+$con->query($sql_query);
+
+header("Location: /contact?success");
+die();
