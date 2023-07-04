@@ -107,3 +107,8 @@ a {
         border-radius: 25px;
     }
 }
+
+.error_handling {
+    margin-top: 10px;
+    color: red;
+}
