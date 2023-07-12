@@ -1,5 +1,8 @@
 <?php
 $title = "Bruno B - Contact";
+if (isset($_GET["success"])) {
+    $title = "Bruno B - Success!";
+}
 $stylesheet = ["contact"];
 include "../template_parts/head.php";
 include "../functions/error_handling.php";
