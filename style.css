@@ -425,8 +425,8 @@ a {
 
     .picture_box_big_boi_second {
         display: block !important;
-        width: 420px;
-        height: 350px;
+        width: 100%;
+        aspect-ratio: 1/1;
 
         margin-right: auto;
         margin-left: auto;
@@ -491,8 +491,8 @@ a {
 
     .picture_box_big_boi {
         display: block !important;
-        width: 420px;
-        height: 350px;
+        width: 100%;
+        aspect-ratio: 1/1;
 
         margin-right: auto;
         margin-left: auto;
@@ -505,15 +505,5 @@ a {
         .icons {
             gap: 5px;
         }
-    }
-}
-
-@media screen and (max-width: 458px) {
-    .picture_box_big_boi {
-        width: 100%;
-    }
-
-    .picture_box_big_boi_second {
-        width: 100%;
     }
 }
