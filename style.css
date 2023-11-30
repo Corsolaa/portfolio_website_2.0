@@ -119,19 +119,19 @@ a {
 }
 
 .picture_box_big_boi {
-    background-image: url("images/bruno_foto_1.jpg");
+    background-image: url("/images/bruno_foto_1.jpg");
 }
 
 .picture_box_big_boi_second{
-    background-image: url("images/bruno_foto_2.jpg");
+    background-image: url("/images/bruno_foto_2.jpg");
 }
 
 .picture_box_1 {
-    background-image: url("images/bruno_foto_1.jpg");
+    overflow: hidden;
 }
 
 .picture_box_2 {
-    background-image: url("images/bruno_foto_2.jpg");
+    background-image: url("/images/bruno_foto_2.jpg");
 }
 
 .info_box {
@@ -249,7 +249,7 @@ a {
     align-items: center;
     box-shadow: rgba(17, 12, 46, 0.15) 0 48px 100px 0;
 
-    background: white;
+    background: rgb(128, 128, 128);
 
     .inside {
         display: flex;
@@ -444,6 +444,7 @@ a {
     .picture_box_1 {
         height: auto !important;
         width: calc(40% - 10px) !important;
+        overflow: hidden;
     }
 
     .section {
